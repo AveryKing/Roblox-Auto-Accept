@@ -30,9 +30,6 @@
         "http://*/*",
         "https://*/*"
       ],
-      "js": [
-        "inject.js"
-      ],
       "run_at:": "document_idle",
       "all_frames": false
     }
