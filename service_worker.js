@@ -1,3 +1,6 @@
+import data from './data.js';
+
+const {notAllowed} = data;
 /** Sends message back to the iFrame. Pass a JSON object
  *  to this function and it will be sent to the frame via inject.js
  */

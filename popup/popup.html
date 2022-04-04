@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roblox Auto Accept</title>
+    <style>
+        body {
+            user-select: none;
+            height:300px;
+        }
+
+        h2 {
+            text-align: center;
+            position: relative;
+            bottom: 80px;
+        }
+
+        h4 {
+            text-align: center;
+            position: relative;
+            bottom: 90px;
+        }
+
+        #notAllowedList {
+            position: relative;
+            bottom: 100px;
+        }
+
+        #submitButton {
+            width: 100px;
+            height: 35px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: #4048f5;
+            border: none;
+            color: white;
+            outline: none;
+        }
+
+        #submitButton:hover {
+            cursor: pointer;
+            background-color: #555cf8;
+        }
+        .submitDiv {
+            position:relative;
+            display:flex;
+            bottom:100px;
+            justify-content:center;
+        }
+        #loading {
+            display:none;
+            justify-content:center;
+            position:relative;
+            bottom:45px;
+        }
+    </style>
+</head>
+<body>
+<img width="350px" src="https://1000logos.net/wp-content/uploads/2021/04/Roblox-logo-768x432.png"/>
+<h2 class="poof">Click the button to accept members</h2>
+<h4 class="poof">Members of the following crews are blacklisted:</h4>
+<h4 class="poof" id="notAllowedList"></h4>
+<div class="poof submitDiv">
+    <button id="submitButton">Accept</button>
+</div>
+<div id="loading">
+    <img width="80px" src="https://c.tenor.com/PfFDd3eNE_gAAAAi/loading-load.gif"/>
+</div>
+
+<script type="module" src="popup.js"></script>
+</body>
+</html>

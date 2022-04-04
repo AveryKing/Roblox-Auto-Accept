@@ -1,18 +1,23 @@
 {
-  "name": "Chrome iFrame Communicator",
+  "name": "Roblox Auto Accept",
   "version": "0.0.1",
   "manifest_version": 3,
-  "description": "Template communicating between chrome extension and an iframe.",
+  "description": "Automatically accept desired players in Roblox crew",
   "background": {
     "service_worker": "service_worker.js",
     "type": "module"
 
   },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
   "permissions": [
     "tabs",
     "webNavigation",
     "scripting",
     "webRequest",
+    "cookies",
     "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
